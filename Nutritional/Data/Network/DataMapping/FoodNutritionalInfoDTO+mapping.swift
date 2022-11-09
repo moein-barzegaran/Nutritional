@@ -24,3 +24,23 @@ struct FoodNutritionalInfoDTO: Decodable {
     let potassium: Float
     let gramsperserving: Float
 }
+
+// MARK: - Mappings to Domain
+
+extension FoodNutritionalInfoDTO {
+    func toDomain() -> FoodNutritionalInfo {
+        return .init(title: title,
+                     calories: calories,
+                     carbs: carbs,
+                     protein: protein,
+                     fat: fat,
+                     saturatedfat: saturatedfat,
+                     unsaturatedfat: unsaturatedfat,
+                     fiber: fiber,
+                     cholesterol: cholesterol,
+                     sugar: sugar,
+                     sodium: sodium,
+                     potassium: potassium,
+                     gramsperserving: gramsperserving)
+    }
+}
