@@ -16,6 +16,8 @@
 		50515BE8291BFD830065F89F /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BE7291BFD830065F89F /* GeneralResponse.swift */; };
 		50515BEC291BFFF80065F89F /* FoodInfoQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BEB291BFFF80065F89F /* FoodInfoQuery.swift */; };
 		50515BEE291C00350065F89F /* FoodNutritionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BED291C00350065F89F /* FoodNutritionalInfo.swift */; };
+		50515BF1291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BF0291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift */; };
+		50515BF5291C03150065F89F /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BF4291C03150065F89F /* FoodRepository.swift */; };
 		50DCF131291A5738001A17A8 /* NutritionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF130291A5738001A17A8 /* NutritionalApp.swift */; };
 		50DCF133291A5738001A17A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF132291A5738001A17A8 /* HomeView.swift */; };
 		50DCF135291A573A001A17A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DCF134291A573A001A17A8 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		50515BE7291BFD830065F89F /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
 		50515BEB291BFFF80065F89F /* FoodInfoQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfoQuery.swift; sourceTree = "<group>"; };
 		50515BED291C00350065F89F /* FoodNutritionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutritionalInfo.swift; sourceTree = "<group>"; };
+		50515BF0291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutritionalInfoUseCase.swift; sourceTree = "<group>"; };
+		50515BF4291C03150065F89F /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
 		50DCF12D291A5738001A17A8 /* Nutritional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutritional.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DCF130291A5738001A17A8 /* NutritionalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalApp.swift; sourceTree = "<group>"; };
 		50DCF132291A5738001A17A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		50515BE9291BFFBA0065F89F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				50515BF2291C02EF0065F89F /* Interfaces */,
+				50515BEF291C01C10065F89F /* UseCases */,
 				50515BEA291BFFE70065F89F /* Entities */,
 			);
 			path = Domain;
@@ -124,6 +130,30 @@
 				50515BED291C00350065F89F /* FoodNutritionalInfo.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		50515BEF291C01C10065F89F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				50515BF0291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		50515BF2291C02EF0065F89F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				50515BF3291C02F50065F89F /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		50515BF3291C02F50065F89F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				50515BF4291C03150065F89F /* FoodRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		50DCF124291A5738001A17A8 = {
@@ -346,7 +376,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DCF14D291A5CB7001A17A8 /* DataTransferService.swift in Sources */,
+				50515BF1291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift in Sources */,
 				50515BE1291BFACE0065F89F /* FoodAPIEndpoints.swift in Sources */,
+				50515BF5291C03150065F89F /* FoodRepository.swift in Sources */,
 				50DCF14B291A5BD6001A17A8 /* NetworkService.swift in Sources */,
 				50DCF133291A5738001A17A8 /* HomeView.swift in Sources */,
 				50DCF131291A5738001A17A8 /* NutritionalApp.swift in Sources */,
