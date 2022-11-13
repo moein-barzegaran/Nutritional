@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50515BD9291BF5260065F89F /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF14C291A5CB7001A17A8 /* DataTransferService.swift */; };
 		50515BDA291BF52A0065F89F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF148291A5A79001A17A8 /* Endpoint.swift */; };
-		50515BDC291BF84B0065F89F /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BDB291BF84B0065F89F /* DataTransferServiceTests.swift */; };
-		50515BE1291BFACE0065F89F /* FoodAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BE0291BFACE0065F89F /* FoodAPIEndpoints.swift */; };
 		50515BE4291BFBB80065F89F /* FoodRequestDTO+mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BE3291BFBB80065F89F /* FoodRequestDTO+mapping.swift */; };
 		50515BE6291BFC2A0065F89F /* FoodNutritionalInfoDTO+mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BE5291BFC2A0065F89F /* FoodNutritionalInfoDTO+mapping.swift */; };
 		50515BE8291BFD830065F89F /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BE7291BFD830065F89F /* GeneralResponse.swift */; };
@@ -18,19 +15,19 @@
 		50515BEE291C00350065F89F /* FoodNutritionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BED291C00350065F89F /* FoodNutritionalInfo.swift */; };
 		50515BF1291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BF0291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift */; };
 		50515BF5291C03150065F89F /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BF4291C03150065F89F /* FoodRepository.swift */; };
+		50515BF8291C04320065F89F /* DefaultFoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50515BF7291C04320065F89F /* DefaultFoodRepository.swift */; };
 		50DCF131291A5738001A17A8 /* NutritionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF130291A5738001A17A8 /* NutritionalApp.swift */; };
 		50DCF133291A5738001A17A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF132291A5738001A17A8 /* HomeView.swift */; };
 		50DCF135291A573A001A17A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DCF134291A573A001A17A8 /* Assets.xcassets */; };
 		50DCF138291A573A001A17A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DCF137291A573A001A17A8 /* Preview Assets.xcassets */; };
-		50DCF147291A5A24001A17A8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF146291A5A24001A17A8 /* NetworkConfig.swift */; };
 		50DCF149291A5A79001A17A8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF148291A5A79001A17A8 /* Endpoint.swift */; };
-		50DCF14B291A5BD6001A17A8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF14A291A5BD6001A17A8 /* NetworkService.swift */; };
-		50DCF14D291A5CB7001A17A8 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF14C291A5CB7001A17A8 /* DataTransferService.swift */; };
-		50DCF15E291A5E08001A17A8 /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF15D291A5E08001A17A8 /* NetworkConfigurableMock.swift */; };
-		50DCF161291A5E2C001A17A8 /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF160291A5E2C001A17A8 /* NetworkSessionManagerMock.swift */; };
-		50DCF162291A5E4D001A17A8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF14A291A5BD6001A17A8 /* NetworkService.swift */; };
-		50DCF165291A7CBC001A17A8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF146291A5A24001A17A8 /* NetworkConfig.swift */; };
-		50DCF167291A82F1001A17A8 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF166291A82F1001A17A8 /* NetworkServiceTests.swift */; };
+		50DCF14B291A5BD6001A17A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF14A291A5BD6001A17A8 /* Router.swift */; };
+		50DCF162291A5E4D001A17A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCF14A291A5BD6001A17A8 /* Router.swift */; };
+		50E53432291F0F4D00B43360 /* FoodEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E53431291F0F4D00B43360 /* FoodEndpoint.swift */; };
+		50E5343429210B7000B43360 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5343329210B6F00B43360 /* NetworkLogger.swift */; };
+		50E5343729210C2400B43360 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5343629210C2400B43360 /* URLParameterEncoder.swift */; };
+		50E5343929210C4700B43360 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5343829210C4700B43360 /* ParameterEncoding.swift */; };
+		50E5343E292110E200B43360 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5343D292110E200B43360 /* URLSessionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		50515BDB291BF84B0065F89F /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
-		50515BE0291BFACE0065F89F /* FoodAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAPIEndpoints.swift; sourceTree = "<group>"; };
 		50515BE3291BFBB80065F89F /* FoodRequestDTO+mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodRequestDTO+mapping.swift"; sourceTree = "<group>"; };
 		50515BE5291BFC2A0065F89F /* FoodNutritionalInfoDTO+mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodNutritionalInfoDTO+mapping.swift"; sourceTree = "<group>"; };
 		50515BE7291BFD830065F89F /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
@@ -53,19 +48,20 @@
 		50515BED291C00350065F89F /* FoodNutritionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutritionalInfo.swift; sourceTree = "<group>"; };
 		50515BF0291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutritionalInfoUseCase.swift; sourceTree = "<group>"; };
 		50515BF4291C03150065F89F /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
+		50515BF7291C04320065F89F /* DefaultFoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFoodRepository.swift; sourceTree = "<group>"; };
 		50DCF12D291A5738001A17A8 /* Nutritional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutritional.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DCF130291A5738001A17A8 /* NutritionalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalApp.swift; sourceTree = "<group>"; };
 		50DCF132291A5738001A17A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		50DCF134291A573A001A17A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50DCF137291A573A001A17A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		50DCF146291A5A24001A17A8 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		50DCF148291A5A79001A17A8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		50DCF14A291A5BD6001A17A8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		50DCF14C291A5CB7001A17A8 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		50DCF14A291A5BD6001A17A8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		50DCF152291A5DC9001A17A8 /* NutritionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50DCF15D291A5E08001A17A8 /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
-		50DCF160291A5E2C001A17A8 /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
-		50DCF166291A82F1001A17A8 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		50E53431291F0F4D00B43360 /* FoodEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEndpoint.swift; sourceTree = "<group>"; };
+		50E5343329210B6F00B43360 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		50E5343629210C2400B43360 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		50E5343829210C4700B43360 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		50E5343D292110E200B43360 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +85,7 @@
 		50515BDE291BFA890065F89F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				50515BF6291C04160065F89F /* Repositories */,
 				50515BDF291BFA9A0065F89F /* Network */,
 			);
 			path = Data;
@@ -98,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				50515BE2291BFBA10065F89F /* DataMapping */,
-				50515BE0291BFACE0065F89F /* FoodAPIEndpoints.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -156,11 +152,18 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		50515BF6291C04160065F89F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				50515BF7291C04320065F89F /* DefaultFoodRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		50DCF124291A5738001A17A8 = {
 			isa = PBXGroup;
 			children = (
 				50DCF12F291A5738001A17A8 /* Nutritional */,
-				50DCF153291A5DC9001A17A8 /* NutritionalTests */,
 				50DCF12E291A5738001A17A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -239,39 +242,31 @@
 		50DCF145291A599A001A17A8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				50DCF146291A5A24001A17A8 /* NetworkConfig.swift */,
+				50E5343C29210FEB00B43360 /* Endpoints */,
+				50E5343529210C1400B43360 /* Encoder */,
 				50DCF148291A5A79001A17A8 /* Endpoint.swift */,
-				50DCF14A291A5BD6001A17A8 /* NetworkService.swift */,
-				50DCF14C291A5CB7001A17A8 /* DataTransferService.swift */,
+				50DCF14A291A5BD6001A17A8 /* Router.swift */,
+				50E5343D292110E200B43360 /* URLSessionProtocol.swift */,
+				50E5343329210B6F00B43360 /* NetworkLogger.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		50DCF153291A5DC9001A17A8 /* NutritionalTests */ = {
+		50E5343529210C1400B43360 /* Encoder */ = {
 			isa = PBXGroup;
 			children = (
-				50DCF15B291A5DD9001A17A8 /* Infrastructure */,
+				50E5343629210C2400B43360 /* URLParameterEncoder.swift */,
+				50E5343829210C4700B43360 /* ParameterEncoding.swift */,
 			);
-			path = NutritionalTests;
+			path = Encoder;
 			sourceTree = "<group>";
 		};
-		50DCF15B291A5DD9001A17A8 /* Infrastructure */ = {
+		50E5343C29210FEB00B43360 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				50DCF15F291A5E1E001A17A8 /* Mocks */,
-				50DCF166291A82F1001A17A8 /* NetworkServiceTests.swift */,
-				50515BDB291BF84B0065F89F /* DataTransferServiceTests.swift */,
+				50E53431291F0F4D00B43360 /* FoodEndpoint.swift */,
 			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		50DCF15F291A5E1E001A17A8 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				50DCF15D291A5E08001A17A8 /* NetworkConfigurableMock.swift */,
-				50DCF160291A5E2C001A17A8 /* NetworkSessionManagerMock.swift */,
-			);
-			path = Mocks;
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,19 +370,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DCF14D291A5CB7001A17A8 /* DataTransferService.swift in Sources */,
+				50E5343E292110E200B43360 /* URLSessionProtocol.swift in Sources */,
+				50E5343429210B7000B43360 /* NetworkLogger.swift in Sources */,
 				50515BF1291C01DA0065F89F /* FoodNutritionalInfoUseCase.swift in Sources */,
-				50515BE1291BFACE0065F89F /* FoodAPIEndpoints.swift in Sources */,
+				50E53432291F0F4D00B43360 /* FoodEndpoint.swift in Sources */,
 				50515BF5291C03150065F89F /* FoodRepository.swift in Sources */,
-				50DCF14B291A5BD6001A17A8 /* NetworkService.swift in Sources */,
+				50DCF14B291A5BD6001A17A8 /* Router.swift in Sources */,
 				50DCF133291A5738001A17A8 /* HomeView.swift in Sources */,
 				50DCF131291A5738001A17A8 /* NutritionalApp.swift in Sources */,
 				50DCF149291A5A79001A17A8 /* Endpoint.swift in Sources */,
+				50E5343729210C2400B43360 /* URLParameterEncoder.swift in Sources */,
 				50515BEC291BFFF80065F89F /* FoodInfoQuery.swift in Sources */,
+				50E5343929210C4700B43360 /* ParameterEncoding.swift in Sources */,
+				50515BF8291C04320065F89F /* DefaultFoodRepository.swift in Sources */,
 				50515BE6291BFC2A0065F89F /* FoodNutritionalInfoDTO+mapping.swift in Sources */,
 				50515BE4291BFBB80065F89F /* FoodRequestDTO+mapping.swift in Sources */,
 				50515BEE291C00350065F89F /* FoodNutritionalInfo.swift in Sources */,
-				50DCF147291A5A24001A17A8 /* NetworkConfig.swift in Sources */,
 				50515BE8291BFD830065F89F /* GeneralResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,13 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50515BDA291BF52A0065F89F /* Endpoint.swift in Sources */,
-				50515BD9291BF5260065F89F /* DataTransferService.swift in Sources */,
-				50DCF15E291A5E08001A17A8 /* NetworkConfigurableMock.swift in Sources */,
-				50DCF167291A82F1001A17A8 /* NetworkServiceTests.swift in Sources */,
-				50515BDC291BF84B0065F89F /* DataTransferServiceTests.swift in Sources */,
-				50DCF162291A5E4D001A17A8 /* NetworkService.swift in Sources */,
-				50DCF165291A7CBC001A17A8 /* NetworkConfig.swift in Sources */,
-				50DCF161291A5E2C001A17A8 /* NetworkSessionManagerMock.swift in Sources */,
+				50DCF162291A5E4D001A17A8 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

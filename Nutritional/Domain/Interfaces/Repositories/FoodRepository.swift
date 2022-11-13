@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol FoodRepository {
-    func fetchFoodNutritionalInfo(id: Int) -> AnyPublisher<FoodNutritionalInfo, Error>
+    func getFoodDetails(id: Int) -> AnyPublisher<FoodNutritionalInfo?, Error> 
 }

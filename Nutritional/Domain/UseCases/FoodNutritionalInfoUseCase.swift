@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol FoodInfoUseCase {
-    func execute(id: Int) -> AnyPublisher<FoodNutritionalInfo, Error>
+    func getFoodDetails(id: Int) -> AnyPublisher<FoodNutritionalInfo?, Error>
 }
 
 final class DefaultFoodInfoUseCase: FoodInfoUseCase {
@@ -17,13 +17,10 @@ final class DefaultFoodInfoUseCase: FoodInfoUseCase {
     private let foodRepository: FoodRepository
 
     init(foodRepository: FoodRepository) {
-
         self.foodRepository = foodRepository
     }
 
-    func execute(id: Int) -> AnyPublisher<FoodNutritionalInfo, Error> {
-
-        return foodRepository
-            .fetchFoodNutritionalInfo(id: id)
+    func getFoodDetails(id: Int) -> AnyPublisher<FoodNutritionalInfo?, Error> {
+        foodRepository.getFoodDetails(id: id)
     }
 }
