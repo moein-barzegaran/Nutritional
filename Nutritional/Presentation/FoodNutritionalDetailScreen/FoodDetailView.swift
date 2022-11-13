@@ -17,6 +17,9 @@ struct FoodDetailView: View {
     
     var body: some View {
         Text("Hello, World!")
+            .onAppear {
+                viewModel.onAppearAction()
+            }
     }
 }
 

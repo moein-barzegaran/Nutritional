@@ -16,7 +16,7 @@ final class DefaultFoodInfoUseCase: FoodInfoUseCase {
 
     private let foodRepository: FoodRepository
 
-    init(foodRepository: FoodRepository) {
+    init(foodRepository: FoodRepository = DefaultFoodRepository()) {
         self.foodRepository = foodRepository
     }
 
