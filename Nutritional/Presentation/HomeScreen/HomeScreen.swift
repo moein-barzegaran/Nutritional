@@ -20,7 +20,7 @@ struct HomeScreen: View {
                 viewModel.onTapMeAction()
             } label: {
                 Circle()
-                    .fill(.orange)
+                    .fill(Color.orangeExtreme)
                     .frame(width: 100, height: 100)
                     .shadow(radius: 5)
                     .overlay(

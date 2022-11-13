@@ -10,6 +10,21 @@ import Combine
 
 class FoodDetailViewModel: ObservableObject {
     
+    struct ListData: Identifiable {
+        let id = UUID().uuidString
+        let title: String
+        let value: String
+    }
+    
+    @Published var foodTitle: String = ""
+    @Published var calories: String = ""
+    @Published var carbs: String = ""
+    @Published var protein: String = ""
+    @Published var fat: String = ""
+    @Published var listDataSource: [ListData] = []
+    
+    @Published var isLoading = true
+    
     private let id: Int
     private let foodInfoUseCase: FoodInfoUseCase
     
@@ -21,6 +36,7 @@ class FoodDetailViewModel: ObservableObject {
     }
     
     func onAppearAction() {
+        isLoading = true
         foodInfoUseCase.getFoodDetails(id: id)
             .sink { completion in
                 switch completion {
@@ -33,7 +49,28 @@ class FoodDetailViewModel: ObservableObject {
                 guard let self else { return }
                 guard let result else { return }
                 
-                Logger.log(">>>Calories \(result.calories)")
+                self.foodTitle = result.title
+                self.calories = String(result.calories)
+                
+                self.carbs = String(result.carbs)
+                self.protein = String(result.protein)
+                self.fat = String(result.fat)
+                
+                self.listDataSource = [
+                    .init(title: "Carbs", value: String(result.carbs)),
+                    .init(title: "Protein", value: String(result.protein)),
+                    .init(title: "Fat", value: String(result.fat)),
+                    .init(title: "Saturated Fat", value: String(result.saturatedfat)),
+                    .init(title: "Unsaturated Fat", value: String(result.unsaturatedfat)),
+                    .init(title: "Fiber", value: String(result.fiber)),
+                    .init(title: "Cholesterol", value: String(result.cholesterol)),
+                    .init(title: "Suger", value: String(result.sugar)),
+                    .init(title: "Sodium", value: String(result.sodium)),
+                    .init(title: "Potassium", value: String(result.potassium)),
+                    .init(title: "Grams per serving", value: String(result.gramsperserving))
+                ]
+                
+                self.isLoading = false
             }
             .store(in: &cancellable)
     }
